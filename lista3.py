@@ -4,11 +4,13 @@ Lista de Exercícios referentes a estruturas de iteração (repetição)
 
 #1.Faça um programa que imprima todos os números de 1 até 100.
 def questao01():
-    pass
+    for x in range(1,101):
+        print(x)
 
 #2. Faça um programa que imprima todos os números pares de 100 até 1.
 def questao02():
-    pass
+    for x in range(1,101,2):
+        print(x)
 
 #3. Faça um programa que imprima os múltiplos de 5, no intervalo de 1 até 500.
 def questao03():
@@ -289,3 +291,5 @@ def questao16():
 #analisadas.
 #Obs.: Para encerrar a entrada de dados, digite um número menor que zero para a
 #idade.
+
+questao02()
