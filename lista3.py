@@ -14,7 +14,8 @@ def questao02():
 
 #3. Faça um programa que imprima os múltiplos de 5, no intervalo de 1 até 500.
 def questao03():
-    pass
+    for x in range(1,500,5):
+        print(x)
 
 #4. Faça umprograma que permita entrar com o nome, a idade e o sexo de 20
 #pessoas.O programa deve imprimir o nome da pessoa se ela for do sexo masculino
