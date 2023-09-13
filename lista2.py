@@ -32,10 +32,28 @@ def q02():
 
 #3. Faça um programa que leia um número e imprima uma das duas mensagens:
 #   "É múltiplo de 3"ou "Não é múltiplo de 3".
-
+def q03():
+    n1 = int(input('Insira um numero: '))
+    if n1%3==0:
+        print('É multiplo de 3')
+    else:
+        print('Não é multiplo de 3')
 #4. Faça um programa que leia um número e informe se ele é ou não divisível por 5.
+def q04():
+    n1 = int(input('Insira um numero: '))
+    if n1%5==0:
+        print('É divisivel por 5')
+    else:
+        print('Não é divisivel por 5')
 
 #5. Faça um programa que leia um número e informe se ele é divisível por 3 e por 7.
+def q05():
+    n1 = int(input('Insira um numero: '))
+    if n1%3==0 and n1%7==0:
+        print('É divisivel por 3 e 7')
+    else:
+        print('Não é divisivel por 3 e 7')
+
 
 #6. A prefeitura do Rio de Janeiro abriu uma linha de crédito para os funcionários
 #   estatutários. O valor máximo da prestação não poderá ultrapassar 30% do salário
@@ -165,4 +183,4 @@ def q02():
 #0,4 1º e 2º grupos
 #0,5 1º, 2º e 3º grupos
 
-q02()
+q05()
