@@ -21,13 +21,24 @@ def questao03():
 #pessoas.O programa deve imprimir o nome da pessoa se ela for do sexo masculino
 #e tiver mais de 21 anos.
 def questao04():
-    pass
+    for i in range(1,21):
+        nome = input('Digite o nome da pessoa: ')
+        idade = int(input('Digite a idade: '))
+        sexo = input('Digite o sexo (M/F): ')
+        if sexo == "M" and idade > 21:
+            print("Pessoas do sexo masculino com mais de 21 anos:")
+
 
 #5. Sabendo-se que a unidade lógica e aritmética calcula o produto através de somas
 #sucessivas, crie um programa que calcule o produto de dois números inteiros
 #lidos. Suponha que os números lidos sejam positivos.
 def questao05():
-    pass
+    for x in range(1,2):
+        num1 = int(input('Digite o primeiro número inteiro positivo: '))
+        num2 = int(input('Digite o segundo número inteiro positivo: '))
+        if num1 <= 1 or num2 <= 2:
+            print("números inteiros positivos.")
+
 
 #6. Crie um programa que imprima os 20 primeiros termos da série de Fibonacci.
 #Observação: os dois primeiros termos desta série são 1 e 1 e os demais são gerados
@@ -35,14 +46,26 @@ def questao05():
 #• 1 + 1 = 2, terceiro termo;
 #• 1 + 2 = 3, quarto termo, etc.
 def questao06():
-    pass
+    termo1 = 1
+    termo2 = 1
+    for x in range(21):
+        print(termo2)
+        prox = termo1 + termo2
+        termo1 = termo2
+        termo2 = prox
 
 #7. Crie um programa que permita entrar com o nome, a nota da
 #prova 1 e da prova 2 de 15 alunos. Ao final, imprimir uma listagem, contendo:
 #nome, nota da prova 1, nota da prova 2, e média das notas de cada aluno. Ao final,
 #imprimir a média geral da turma.
 def questao07():
-    pass
+    for x in range(1,16):
+        nome = input('Digite o nome do aluno: ')
+        nota1 = int(input('Digite a nota da prova 1: '))
+        nota2 = int(input('Digite a nota da prova 2: '))
+        media = (nota1 + nota2)
+        if media==nota1+nota2:
+            print(media)
 
 #8. Faça umprograma que permita entrar com o nome e o salário bruto de 10 pessoas.
 #Após ler os dados, imprimir o nome e o valor da alíquota do imposto de renda
@@ -293,4 +316,4 @@ def questao16():
 #Obs.: Para encerrar a entrada de dados, digite um número menor que zero para a
 #idade.
 
-questao03()
+questao07()
