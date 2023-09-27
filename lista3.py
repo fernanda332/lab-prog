@@ -75,8 +75,16 @@ def questao07():
 #Salário maior ou igual a R$1300,00 e menor que R$2300,00 10% do salário bruto
 #Salário maior ou igual a R$2300,00 15% do salário bruto
 def questao08():
-    pass
-
+    for i in range(10):
+input(f"Digite o nome da pessoa: ")
+float(input(f"Digite o salário bruto: "))
+    if salario_bruto < 1300.00:
+        print("Isento")
+    elif 1300.00 <= salario_bruto < 2300.00:
+        print("10% do salário bruto")
+    else:
+        irrf = salario_bruto<=2300.00:
+        print("15% do salario bruto")
 #9. No dia da estréia do filme "Procurando Dory", uma grande emissora de TV realizou
 #uma pesquisa logo após o encerramento do filme. Cada espectador respondeu
 #a um questionário no qual constava sua idade e a sua opinião em relação ao filme:
