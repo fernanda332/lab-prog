@@ -75,16 +75,15 @@ def questao07():
 #Salário maior ou igual a R$1300,00 e menor que R$2300,00 10% do salário bruto
 #Salário maior ou igual a R$2300,00 15% do salário bruto
 def questao08():
-    for i in range(10):
-input(f"Digite o nome da pessoa: ")
-float(input(f"Digite o salário bruto: "))
-    if salario_bruto < 1300.00:
-        print("Isento")
-    elif 1300.00 <= salario_bruto < 2300.00:
-        print("10% do salário bruto")
-    else:
-        irrf = salario_bruto<=2300.00:
-        print("15% do salario bruto")
+    for x in range(10):
+        nome = input("Digite o nome da pessoa: ")
+        salario_bruto = float(input("Digite o salário bruto: "))
+        if salario_bruto < 1300.00:
+            print("Isento")
+        elif 1300.00 <= salario_bruto < 2300.00:
+            print(f'IR: {salario_bruto*0.10}')
+        else:
+            print(f'IR: {salario_bruto*0.15}')
 #9. No dia da estréia do filme "Procurando Dory", uma grande emissora de TV realizou
 #uma pesquisa logo após o encerramento do filme. Cada espectador respondeu
 #a um questionário no qual constava sua idade e a sua opinião em relação ao filme:
@@ -95,7 +94,24 @@ float(input(f"Digite o salário bruto: "))
 #• A percentagem de pessoas que responderam bom entre todos os expectadores
 #analisados.
 def questao09():
-    pass
+    soma_idade_exc = 0
+    qtde_exc = 0
+    qtde_reg = 0
+    qtde_bom = 0
+    for x in range(3):
+        idade = int(input("Digite a idade: "))
+        opiniao = int(input("Digite a opinião{excelente-3;bom-2;regular-1}:"))
+        if opiniao ==3:
+            soma_idade_exc+=idade
+            qtde_exc+=1
+        if opiniao ==2:
+            qtde_bom+=1
+        if opiniao ==1:
+            qtde_reg+=1
+    print(f'media de idade que responderam excelente: {soma_idade_exc/qtde_exc}')
+    print(f'quantidade de pessoas que responderam regular: {qtde_reg}')
+    print(f'porcentagem de pessoas que responderam bom: {round(qtde_bom/3*100,0)}%')
+
 
 #10. Em um campeonato Europeu de Volleyball, se inscreveram 30 países. Sabendo-se
 #que na lista oficial de cada país consta, além de outros dados, peso e idade de 12
@@ -106,7 +122,24 @@ def questao09():
 #• O atleta mais jovem de cada time;
 #• O peso médio e a idade média de todos os participantes.
 def questao10():
-    pass
+    peso_medio = 0
+    idade_media = 0
+    jogador_mais_pesado = 0
+    jogador_mais_jovem = 0
+    peso_medio_total = 0
+    idade_media_total = 0
+    for x in range(3):
+        idade = int(input("Digite a idade: "))
+        peso = int(input("Digite o peso{kg}:"))
+        if peso ==peso_medio:
+            peso_medio+=idade_media
+        if peso <==80:
+            print(f'O atleta mais pesado do time:{jogador_mais_pesado}')
+        if idade >==20:
+            print(f'O atleta mais novo do time: {jogador_mais_jovem}')
+    print(f'media de idade e peso: {peso_medio/idade_media}')
+    print(f'o atleta mais pesado do time: {jogador_mais_pesado}')
+    print(f'o atleta mais jovem de cada time: {jogador_mais_jovem}')
     
 #11. Construa um programa que leia vários números e informe quantos números
 #entre 100 e 200 foram digitados. Quando o valor 0 (zero) for lido, o algoritmo
@@ -324,4 +357,4 @@ def questao16():
 #Obs.: Para encerrar a entrada de dados, digite um número menor que zero para a
 #idade.
 
-questao07()
+questao09()

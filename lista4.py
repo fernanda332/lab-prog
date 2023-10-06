@@ -7,10 +7,30 @@ Lista de Exercícios referentes a coleções em python
 #permita que o usuário digite um número inteiro para ser buscado na lista, se
 #for encontrado o programa deve imprimir a posição desse número na lista, caso
 #contrário, deve imprimir a mensagem: "Nao encontrado!".
-
+def q01():
+    lista = []
+    for x in range(15):
+        lista.append(ramdom.randrange(100))
+    print(lista)
+    num = int(input('Digite um numero a ser buscado: '))
+    try:
+        print(f'Valor encontrado na posição: {lista.index(num)}')
+    except ValueError:
+        print('Valor não encontrado na lista')
+    except:
+        print('Erro desconhecido, contate o admiistrador do sistema!')
+q01()
 #2. Faça um programa que armazene 10 letras em uma lista e imprima uma listagem
 #numerada.
-
+def q02():
+    lista = []
+    for x in range(10):
+        lista.append(chr(random.randrange(65,91)))
+    cont = 0
+    for letra in lista:
+        print(f'{cont}: {letra}')
+        cont+=1
+q02()
 #3. Construa uma programa que armazene 15 números em uma lista e imprima
 #uma listagem numerada contendo o número e uma das mensagens: par ou ímpar.
 
@@ -95,3 +115,4 @@ Lista de Exercícios referentes a coleções em python
 
 #20. Faça um programa que leia a matrícula e a média de 100 alunos. Ordene da maior
 #para a menor nota e imprima uma relação contendo todas as matrículas e médias.
+
